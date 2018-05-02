@@ -15,9 +15,10 @@ app = Flask(__name__)
 def index():
     return "Hi People"
 
-@app.route('/play')
-def play():
-    return render_template('index.html')
+@app.route('/play/<user_submitt>')
+def play(user_submit):
+    return render_template('index.html', num=int(user_submit))
+
 
 if __name__=="__main__":
 
