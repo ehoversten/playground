@@ -26,7 +26,6 @@
       .box {
         height: 150px;
         width: 150px;
-        background-color: lightblue;
         margin: 10px;
       }
 
@@ -39,7 +38,7 @@
       </div>
       <div class="container">
         {% for x in range(0, num): %}
-        <div class="box"></div>
+        <div class="box" style="background-color:{{color}}"></div>
         {% endfor %}
         </div>
 
